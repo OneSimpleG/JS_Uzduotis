@@ -48,12 +48,12 @@ switch(men){
         console.log('Neteisingai ivestas menuo');
 }
 //Uzd. 3
-const val = 15
+const val = 7
 
 if (6<= val && val < 11) console.log("Labas rytas");
 else if (11<= val && val < 18) console.log("Laba diena");
 else if (18<= val && val < 21) console.log("Labas vakaras");
-else if (21<= val <= 24 && 0 <= val < 6) console.log("Labanakt");
+else if (21<= val || val <= 24 && 0 <= val || val < 6) console.log("Labanakt");
 //Uzd. 4
 let date = new Date()
 const day = date.getDay()
@@ -90,6 +90,7 @@ if (age>=18){
     if (hasLicense == true) console.log('Pilnametis turintis teises');
     else console.log("Pilnametis neturintis teises");
 }
+else console.log('Nepilnametis');
 //Uzd. 6
 const num = 0
 if (num > 0) console.log('Skaicius teigiamas');
