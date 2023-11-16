@@ -55,16 +55,40 @@ else if (11<= val && val < 18) console.log("Laba diena");
 else if (18<= val && val < 21) console.log("Labas vakaras");
 else if (21<= val <= 24 && 0 <= val < 6) console.log("Labanakt");
 //Uzd. 4
-const date = new Date()
+let date = new Date()
 const day = date.getDay()
+switch(day){
+    case 1:
+        console.log('Pirmadienis');
+        break
+    case 2:
+        console.log("Antradienis");
+        break
+    case 3:
+        console.log('Treciadienis');
+        break
+    case 4:
+        console.log('Ketvirtadienis');
+        break
+    case 5:
+        console.log('Penktadienis');
+        break
+    case 6:
+        console.log('Sestadienis');
+        break
+    case 7:
+        console.log('Sekmadienis');
+        break
+    default:
+        console.log('Neteisingai ivesta diena');
+}
 console.log(date);
-console.log(day);
 //Uzd. 5
 const age = 18
 const hasLicense = false
 if (age>=18){
     if (hasLicense == true) console.log('Pilnametis turintis teises');
-    else console.log("Pilnametis turintis teises");
+    else console.log("Pilnametis neturintis teises");
 }
 //Uzd. 6
 const num = 0
@@ -82,20 +106,23 @@ else console.log('Niekas neprisijunges');
 //Uzd. 8
 const login2 = true
 const user = 'simple'
+const skelbimas = true
 if (login2 == true){
     if (user == 'admin') console.log('Reikia patvirtinti skelbima');
-    else if (user == 'simple') console.log('Galima sukurti arba istrinti skelbima');
+    else if (user == 'simple')
+        if (skelbimas == true) console.log('Galite sukurti arba istrinti skelbima');
+        else console.log('Sveiki prisijunge');
 }
 else console.log('Reikia prisijungti');
 //Uzd. 9
-const number = 50
-if (number>50)console.log(`skaicius ${number} yra didesnis uz 50`);
+const number = 60
+if (number>50)console.log(number)
 else if (number<50) console.log('skaicius mazesnis uz 50');
 else console.log('skaicius yra 50');
 //Uzd. 10
-let pirmasSkaicius = parseInt(prompt('Iveskite pirma skaiciu'))
-let veiksmas = prompt('Iveskite veiksma (+,-,*,/)')
-let antrasSkaicius = parseInt(prompt('Iveskite antra skaiciu'))
+// let pirmasSkaicius = parseInt(prompt('Iveskite pirma skaiciu'))
+// let veiksmas = prompt('Iveskite veiksma (+,-,*,/)')
+// let antrasSkaicius = parseInt(prompt('Iveskite antra skaiciu'))
 let suma = 0
 if (veiksmas== '+'){
     suma = pirmasSkaicius + antrasSkaicius
