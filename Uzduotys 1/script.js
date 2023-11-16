@@ -120,9 +120,9 @@ if (number>50)console.log(number)
 else if (number<50) console.log('skaicius mazesnis uz 50');
 else console.log('skaicius yra 50');
 //Uzd. 10
-// let pirmasSkaicius = parseInt(prompt('Iveskite pirma skaiciu'))
-// let veiksmas = prompt('Iveskite veiksma (+,-,*,/)')
-// let antrasSkaicius = parseInt(prompt('Iveskite antra skaiciu'))
+let pirmasSkaicius = parseInt(prompt('Iveskite pirma skaiciu'))
+let veiksmas = prompt('Iveskite veiksma (+,-,*,/)')
+let antrasSkaicius = parseInt(prompt('Iveskite antra skaiciu'))
 let suma = 0
 if (veiksmas== '+'){
     suma = pirmasSkaicius + antrasSkaicius
